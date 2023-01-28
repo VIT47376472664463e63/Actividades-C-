@@ -3,22 +3,11 @@ Menú con muchas funciones
 
 ____________________________________________________________________CODIGO___________________________________________________________________________________________
 
-
-
-
-
-
-
-
-
-
 #include <iostream>
-	
-	
+
 using namespace std;
-	
-	
 int opcion;
+
 
 int main()
 {
@@ -36,13 +25,15 @@ int main()
 	// Semana
 	int m;
 
+	
+	
 
 
 
 
 	while (1 == 1)
 	{
-
+		
 		cout << "------MENU------" << endl;
 		cout << "1 Ingresa 3 numeros " << endl;
 		cout << "2 Numero mayor entre dos numeros   " << endl;
@@ -51,8 +42,10 @@ int main()
 		cout << "5 Semana" << endl;
 		cout << "6 Salir" << endl;
 		cout << "Eliga una opcion" << endl;
+	
 		cin >> opcion;
 		cin.ignore();
+		system("cls");
 
 		switch (opcion)
 		{
@@ -68,7 +61,9 @@ int main()
 			cout << "tu resultado es  " << a + b + n;
 			cout << "\n" << endl;
 			cin.ignore();
+		
 			break;
+			system("cls");
 
 		case 2:
 			cout << "Ingresa tu primer numero" << endl;
@@ -77,16 +72,19 @@ int main()
 			cin >> d;
 
 			if (c > d) {
-				cout << "el numero mayor es " << c;
+				cout << "el numero mayor es \n" << c;
 
 			}
 
 			if (d > c) {
-				cout << "el numero mayor es " << d;
+				cout << "el numero mayor es\n " << d;
 
 			}
+
+		
 			cout << "\n" << endl;
 			break;
+			system("cls");
 
 		case 3:
 
@@ -98,11 +96,12 @@ int main()
 			cout << "el resultado es " << u * j / 2;
 			cout << "\n" << endl;
 			break;
+			system("cls");
 
 		case 4:
 			cout << "Ingresa tu numero" << endl;
 			cin >> t;
-			if (t % 4== 0) {
+			if (t % 4==0) {
 				cout << "Este numero es bisiesto" << endl;
 				cout << "\n" << endl;
 
@@ -114,6 +113,7 @@ int main()
 			}
 
 			break;
+			system("cls");
 
 		case 5:
 			cout << "Ingresa tu del 1 al 7" << endl;
@@ -160,9 +160,12 @@ int main()
 			if (m == 7) {
 				cout << "Domingo" << endl;
 				cout << "\n" << endl;
+
+				
 			}
 			break;
-
+			system("cls");
+			
 		
 		case 6:
 			exit(EXIT_SUCCESS);
@@ -171,9 +174,19 @@ int main()
 		default:
 			break;
 		}
-
+		
+	
 
 	}
 	return 0;
+
+	
 }
+
+
+
+
+
+
+
 
