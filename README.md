@@ -164,7 +164,7 @@ int main()
 			break;
 
 		
-		case 56:
+		case 6:
 			exit(EXIT_SUCCESS);
 			break;
 
